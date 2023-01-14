@@ -272,6 +272,7 @@ nav .navbar{
 
     @media only screen and (max-width: 576px){ 
         
+        /* === Banner responsive === */
         .container{
             width: 100%;
         }
@@ -296,7 +297,27 @@ nav .navbar{
         .banner-img img{
             width: 200px; 
         }
+        
+        /* === Brand responsive === */
+        .brand-logo{
+            flex-direction: row;
+            flex-wrap: wrap;
+            row-gap: 14px;
+            justify-content: space-around;
+        }
+        .brand-logo img{
+            
+        }
 
+        /* === Popular Collection responsive === */
+
+        .items-grid{
+            grid-template-columns: repeat(1, 1fr);
+        }
+
+        .collection a{
+            text-align: center;
+        }
     
 
 
