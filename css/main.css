@@ -81,10 +81,6 @@ nav .navbar{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-repeat: no-repeat;
-    background-image: url(../images/Circle\ design.svg);
-    background-repeat: no-repeat;
-    background-position: right;
 }
 
 
@@ -109,10 +105,14 @@ nav .navbar{
     color: white;
 }
 .banner-img{
-    width: 100%;
     display: flex;
     align-items: center;
     justify-content: flex-end;
+    background-repeat: no-repeat;
+    background-image: url(../images/Circle\ design.svg);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: contain;
 }
 
 /*  ================== 
@@ -289,8 +289,12 @@ nav .navbar{
             font-weight: 700;
             font-size: 28px;
         }
+        .banner-img {
+           justify-content: center;
+
+        }
         .banner-img img{
-            width: 200px;
+            width: 200px; 
         }
 
     
