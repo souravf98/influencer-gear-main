@@ -75,12 +75,14 @@ nav .navbar{
     Header Banner Section 
     ===================== */
 
-.banner .container{
+.banner-info{
+    width: 100%;
     height: 475px;
     display: flex;
     align-items: center;
+    justify-content: space-between;
     background-repeat: no-repeat;
-    background-image:  url(../images/main-camera.png), url(../images/Circle\ design.svg);
+    background-image: url(../images/Circle\ design.svg);
     background-repeat: no-repeat;
     background-position: right;
 }
@@ -264,17 +266,27 @@ nav .navbar{
         font-size: 24px;
         border-radius: 40px;
     }
-
+.hide{
+    display: none;
+}
 
     /* =================================
     Mobile View responsive Media Query  
     =====================================*/
 
-    @media only screen and (max-width: 575.98px){ 
+    @media only screen and (max-width: 576px){ 
         
+ 
+    .banner-info {
+        display: flex;
+        width: 100%;
+        flex-direction: column-reverse;
+        row-gap: 30px;
+    }
+    
 
-        
-     }
+
+}
 
 
 
